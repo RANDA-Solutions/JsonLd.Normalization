@@ -20,4 +20,4 @@ jobs:
       - name: Create the package
         run: dotnet pack --configuration Release JsonLd.Normalization.csproj
       - name: Publish the package to GPR
-        run: dotnet nuget push JsonLd.Normalization/bin/Release/*.nupkg
+        run: dotnet nuget push bin/Release/*.nupkg
