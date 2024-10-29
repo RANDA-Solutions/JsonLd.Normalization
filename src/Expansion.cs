@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -1860,6 +1861,11 @@ namespace JsonLd.Normalization
             // nothing to expand
             if (Utils.IsEmptyObject(value))
                 return null;
+
+            if (value.ToString().Contains("RevocationList"))
+            {
+                Debugger.Break();
+            }
 
             // special-case expand @id and @type (skips '@id' expansion)
             var expandedProperty = ExpandIri(activeCtx, activeProperty, IriRelativeTo.VocabSet, null, null, options);

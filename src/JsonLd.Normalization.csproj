@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	<TargetFrameworks>net5.0;net6.0;netstandard2.1;netstandard2.0;net472</TargetFrameworks>
 	<ApplicationIcon />
-	<Version>1.0.3</Version>
+	<Version>1.1.0</Version>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
