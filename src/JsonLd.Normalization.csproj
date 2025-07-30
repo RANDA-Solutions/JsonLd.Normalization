@@ -3,8 +3,12 @@
   <PropertyGroup>
 	<TargetFrameworks>net5.0;net6.0;netstandard2.1;netstandard2.0;net472</TargetFrameworks>
 	<ApplicationIcon />
-	<Version>1.1.0</Version>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Version>1.1.1</Version>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	<IsPackable>true</IsPackable>
+	<Authors>Level Data Development Team</Authors>
+	<RepositoryUrl>https://github.com/RANDA-Solutions/JsonLd.Normalization</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.*" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
 
